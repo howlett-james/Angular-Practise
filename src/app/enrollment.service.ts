@@ -9,6 +9,6 @@ export class EnrollmentService {
   _url ='http://localhost:3000/enroll';
   constructor(private _http:HttpClient) { }
   enroll(usr: User){
-    return this._http.post<any>(this._url,usr )
+    return this._http.post<any>(this._url,usr)
   }
 }

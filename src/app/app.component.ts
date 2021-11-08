@@ -10,7 +10,6 @@ let fname:string, date:any,phonenumber:number,gender:string,details:string;
 })
 
 export class AppComponent {
-  
   title = 'Angular-Practise';
   genderHasError = true;
   submitted = false;
@@ -29,14 +28,19 @@ export class AppComponent {
       this.genderHasError = false;
     }
   }
-
-  submit(){
-
+  //PRINT IN NODE TERMINAL USING EXPRESS
+/*   submit(){
     this.submitted = true;
     this._enrollmentService.enroll(this.userModel)
     .subscribe(
       data => console.log("Success! ",data),
       error=> console.error("Error!",error)
     )
+  }  */
+  
+  //PRINT IN WEB PAGE
+  submit(){
+    var json = JSON.stringify(this.userModel)
+    document.write(json)
   }
 }
