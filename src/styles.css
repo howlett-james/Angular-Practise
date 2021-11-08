@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+input[type='number']{
+    -moz-appearance: textfield;
+}
+form{
+    margin: 100px;
+    align-items: center;
+    
+}
+form div{
+    line-height: 50px;
+    text-align: justify;
+}
+form div h1 {
+    text-align: center;
+}
+
+input[type="button"]{
+    align-items: center;
+}
